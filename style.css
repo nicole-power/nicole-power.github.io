@@ -1,6 +1,8 @@
 /* BASIC */
 
-h1 {
+h1,
+h2,
+h3 {
   font-size: 4vw;
 }
 
@@ -23,6 +25,7 @@ a:hover {
   color: #B19CD9;
 }
 
+
 .custom-size {
   font-size: 25px;
 }
@@ -35,6 +38,39 @@ a:hover {
   display: inline-block;
   border-bottom: 10px solid #DAD1EB;
   line-height: 5px;
+}
+
+.resume .line {
+  line-height: 10px;
+  font-style: italic;
+}
+
+.resume li,
+.skills li {
+  font-size: 20px;
+}
+
+.resume ul,
+.skills ul {
+  list-style: none;
+}
+
+.resume ul li::before,
+.skills ul li::before {
+  content: "\2022";
+  color: #B19CD9;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.resume .title {
+  font-weight: 600;
+}
+
+.resume .font-size {
+  font-size: 20px;
 }
 
 /* CUSTOM BUTTON */
@@ -99,6 +135,7 @@ a:hover {
 }
 
 @media screen and (min-width: 500px) {
+
   .jumbo-text {
     line-height: 30px;
   }
@@ -112,8 +149,14 @@ a:hover {
 
 
 @media screen and (min-width: 900px) {
-  h1 {
+
+  h1,
+  h2 {
     font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 2vw;
   }
 
   .jumbo-text {
@@ -123,7 +166,7 @@ a:hover {
   .underline {
     display: inline-block;
     border-bottom: 15px solid #DAD1EB;
-    line-height: 10px;
+    line-height: 20px;
   }
 
   .img-left {
@@ -147,14 +190,17 @@ a:hover {
   }
 }
 
-
-
 @media screen and (min-width: 1200px) {
 
   /* BASIC */
 
-  h1 {
+  h1,
+  h2 {
     font-size: 2vw;
+  }
+
+  h3 {
+    font-size: 1.5vw;
   }
 
   /* LAYOUT */
