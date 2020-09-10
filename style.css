@@ -1,5 +1,4 @@
 /* BASIC */
-
 h1,
 h2,
 h3 {
@@ -25,9 +24,9 @@ a:hover {
   color: #B19CD9;
 }
 
-
 .custom-size {
-  font-size: 25px;
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .jumbo-text {
@@ -104,14 +103,24 @@ a:hover {
   grid-template-rows: repeat(3, auto);
 }
 
-.img-left {
+.main-img-left {
   grid-column: 1 / span 8;
   grid-row: 1 / span 3;
 }
 
-.txt-right {
+.main-txt-right {
   grid-column: 3 / span 6;
   grid-row: 2 / span 1;
+}
+
+.img-left {
+  grid-column: 1 / span 8;
+  grid-row: 1 / span 2;
+}
+
+.txt-right {
+  grid-column: 1 / span 8;
+  grid-row: 3 / span 1;
 }
 
 .img-right {
@@ -159,6 +168,10 @@ a:hover {
     font-size: 2vw;
   }
 
+  .custom-size {
+    font-size: 25px;
+  }
+
   .jumbo-text {
     line-height: 45px;
   }
@@ -175,17 +188,17 @@ a:hover {
   }
 
   .txt-right {
-    grid-column: 4 / span 4;
+    grid-column: 4 / span 5;
     grid-row: 2 / span 1;
   }
 
   .img-right {
-    grid-column: 3 / span 5;
+    grid-column: 3 / span 6;
     grid-row: 1 / span 3;
   }
 
   .txt-left {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 5;
     grid-row: 2 / span 1;
   }
 }
@@ -203,20 +216,14 @@ a:hover {
     font-size: 1.5vw;
   }
 
-  /* LAYOUT */
-
-  /* .overlay-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-  } */
-
-  .img-left {
+  .img-left,
+  .main-img-left {
     grid-column: 1 / span 5;
     grid-row: 1 / span 3;
   }
 
-  .txt-right {
+  .txt-right,
+  .main-text-right {
     grid-column: 5 / span 4;
     grid-row: 2 / span 1;
   }
